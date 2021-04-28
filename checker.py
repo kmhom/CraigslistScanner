@@ -12,6 +12,6 @@ miata_page = urlopen(miata_url)
 html_decode_miata = miata_page.read().decode("utf-8")
 soup = BeautifulSoup(html_decode_miata, "html.parser")
 
-print(soup.get_text())
-
-
+#print(soup.get_text())
+#print(soup.title())
+print(soup.prettify())
